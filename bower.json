@@ -1,0 +1,34 @@
+{
+  "name": "Personal Website",
+  "version": "0.0.1",
+  "homepage": "https://github.com/larry0123du/web-dev",
+  "description": "This is My Personal Website",
+  "main": "index.html",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "keywords": [
+    "html",
+    "css"
+  ],
+  "authors": [
+    "Ruihang Du"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "font-awesome": "~4.4.0"
+  }
+}
