@@ -33,6 +33,16 @@
   font-size: 6em;
 }
 
+/*.social {
+  align-items: center;
+  height: 60px;
+}
+
+.linkedin {
+  height: 60px;
+  width: 60px;
+}*/
+
 .header-subtitle {
   font-size: 3.4em;
 }
@@ -68,11 +78,11 @@ footer {
   text-align: center;
   font-size: 1.2em;
 }
-
+/*
 footer .fa-heart {
   color: #f77380;
 }
-
+*/
 .container {
   max-width: 60em;
 }
@@ -101,8 +111,10 @@ section {
 }
 
 #about {
-  min-height: 600px;
-  background-color: #339DCA;
+  min-height: 500px;
+  min-width: 950px;
+  /*background-color: #339DCA;*/
+  background-image: url("/assets/img/2015-06-13 00.19.19.jpg"); 
   padding-bottom: 40px;
 }
 
@@ -110,13 +122,13 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 400px;
+  height: 350px;
 }
 
 
-.content-right {
+/*.content-right {
   display: inline-block;
-}
+}*/
 
 .headshot {
   width: 100%;
@@ -138,10 +150,10 @@ section {
   }
 */
 
-  #skills {
-    /*display: inline-block;*/
+  /*#skills {
+    display: inline-block;
     display: flex;
-  }
+  }*/
 
   .about-wrapper div:first-child {
     text-align: center;
@@ -153,3 +165,18 @@ section {
     margin-bottom: 45px;
   }
 }
+
+#Experiences {
+  min-height: 500px;
+}
+
+.education {
+  font-size: 2px;
+  font-style: sans-serif;
+  color: black;
+}
+
+.name {
+  font-weight: 500;
+}
+
