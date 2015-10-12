@@ -111,7 +111,7 @@ section {
 }
 
 #about {
-  min-height: 500px;
+  min-height: 700px;
   min-width: 950px;
   /*background-color: #339DCA;*/
   background-image: url("/assets/img/2015-06-13 00.19.19.jpg"); 
@@ -166,17 +166,112 @@ section {
   }
 }
 
-#Experiences {
+#experiences {
   min-height: 500px;
+  background-image: url(https://images.unsplash.com/photo-1429389500602-ee846f41eea7?q=80&fm=jpg&s=a4bb94171d7805618909e2b7a5951ce8);
+  /*background-size: 100%;
+  background-repeat: no-repeat; */
+}
+
+.experience-title {
+  text-align: center;
+  color: black;
+
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .education {
-  font-size: 2px;
-  font-style: sans-serif;
+  font-size: 1.4em;
+  font-style: Courier;
   color: black;
+}
+
+.sub-title {
+  font-size: 35px;
+  font-weight: 300;
+}
+
+#experiences a {
+  color: black;
+}
+
+#experiences a:hover {
+  text-decoration: underline;
 }
 
 .name {
   font-weight: 500;
 }
 
+
+#blogs {
+  min-height: 600px;
+  min-width: 950px;
+  /*background-color: #339DCA;*/
+  /*background-image: url(); */
+  padding-bottom: 40px;
+  text-align: center;
+  color: black;
+}
+
+#blogs h2 {
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#blogs p {
+  font-size: 40px;
+}
+
+#contact {
+  min-height: 750px;
+  min-width: 950px;
+  background: url(https://images.unsplash.com/uploads/1413222992504f1b734a6/1928e537?q=80&fm=jpg&s=f24faa3ab00a050e0b1527fd0bb629b0);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.contact-title {
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contact-input {
+  padding: 25px;
+  margin: 25px 0;
+}
+
+.contact-input:first-child {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.contact-submit {
+  padding: 15px;
+  width: 200px;
+}
+
+.contact-notification {
+  display: none;
+  margin-bottom: 0;
+}
+
+@media (max-width: 480px) {
+  .contact-input {
+    margin: 25px 0;
+  }
+
+  .contact-input:first-child {
+    margin-top: 25px;
+  }
+
+  .contact-submit {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.button-wrapper {
+  text-align: center;
+}
