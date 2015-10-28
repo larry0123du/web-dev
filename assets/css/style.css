@@ -169,8 +169,7 @@ section {
 #experiences {
   min-height: 500px;
   background-image: url(https://images.unsplash.com/photo-1429389500602-ee846f41eea7?q=80&fm=jpg&s=a4bb94171d7805618909e2b7a5951ce8);
-  /*background-size: 100%;
-  background-repeat: no-repeat; */
+  /*ls*/
 }
 
 .experience-title {
@@ -274,4 +273,22 @@ section {
 
 .button-wrapper {
   text-align: center;
+}
+
+.wrapper-404 {
+  height: 100vh;
+}
+
+.title-404 {
+  position: absolute;
+}
+
+.img-404 {
+  width: 100%;
+  height: 100%;
+
+  background-image: url(/assets/img/404.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: contain; 
 }

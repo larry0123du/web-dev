@@ -1,0 +1,133 @@
+<header class="main-header">
+	<div class="canvas"></div>
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collaps-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">
+					<i class="fa fa-random"></i>
+					Ruihang Du
+				</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="/">Home</a></li>
+					<li><a id="nav-about" href="#about">About</a></li>
+					<li><a id="nav-experience" href="#experiences">Experience</a></li>
+					{{#if posts}}
+					<li><a id="nav-blogs" href="#blogs">Blogs</a></li>
+					{{/if}}
+					<!-- <li><a id="nav-portfolio" href="#portfolio">Portfolio</a></li> -->
+					<li><a id="nav-contact" href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="header-text">
+		<h1 class="header-title">RUIHANG DU</h1>
+		<h2 class="header-subtitle">A Thinker, A Programmer, A Punk</h2>
+	</div>
+	<!-- <div class="social"> 
+		<a href="https://www.linkedin.com/profile/view?id=AAMAABiQOUQBQmYd45vgRxXDxt_XuSA2Xs0m6Lc&trk=hp-identity-name">
+				<img src="http://icons.iconarchive.com/icons/icons8/android/512/Social-Networks-Linkedin-icon.png" alt='LinkedIn'class="linkedin">
+		</a>
+	</div> -->
+</header>
+<main>
+	<section id="about">
+		<div class="container">
+			<h2 class="section-title">About Myself</h2>
+			<div class="row about-wrapper">
+				<div class="col-xs-12 col-sm-3">
+						<img src="https://avatars3.githubusercontent.com/u/11513232?v=3&s=460" alt='me in suit' class="img-circleheadshot">
+				</div>
+				<div class="col-xs-12 col-sm-9">
+					<div class="content">
+						<p>
+							&#9830; Purdue 19' CS
+						</p>
+						<p>
+							&#9830; Driven by passion for problem-solving
+						</p>
+						<p>
+							&#9830; Love Math, Photography, Post-Rock & Meditation
+						</p>
+						<p>
+							&#9830; And of course, the most of all, <span style="font-style:bold; color:gold;">Programming</span>
+						</p>
+						<p>
+							&#9830; Always on the road
+						</p>
+					</div>
+					<!-- <div class="content-right">
+						<div id="skills"></div>
+					</div> -->
+				</div>
+			</div>				
+		</div>
+	</section>
+	<section id="experiences">
+		<div class="container">
+			<h2 class="experience-title">My Experiences</h2>				
+			<div class="section-content">
+				<div id="skills"></div>
+			</div>
+			<div class="education">
+				<h3 class="sub-title">Education</h3>
+				<hr>
+				<h4><span class="name">Purdue University</span>, West Lafayette, IN</h4>
+				<p>
+					<h5>Aug . 24th . 2015 ~ present</h5>
+					<h5>Computer Science, Bachelor of Science</h5>
+				</p>
+				<br>
+				<h4><span class="name">The Affiliated High School of Peking Univ.</span>, Beijing, China</h4>
+				<p>
+					<h5>Sept . 1st . 2009 ~ June . 20th . 2015</h5>
+					<h5>Middle School & High School</h5>
+				</p>
+			</div>
+			<br>
+			<h3 class="sub-title">Read More In My <a href="">Resume &raquo;</a></h3>
+		</div>
+	</section>
+
+	{{#if posts}}
+	<section id="blogs">
+		<div class="container">
+			<h2 class="blog-title">My Blogs</h2>
+			<br>
+			<p>Coming Up Soon</p>
+			<br>
+			<i class="fa-4x fa-spin fa fa-refresh"></i>
+		</div>
+	</section>
+	{{/if}}
+	<section id="contact">
+		<div class="container">
+			<h2 class="contact-title">Contact Me</h2>
+			<br>
+			<form>
+        		<div class='row'>
+          		<div class='col-xs-12 col-sm-6'>
+            		<input type='text' label='Name' class='form-control contact-input' name='first' placeholder='First Name *'>
+          		</div>
+          		<div class='col-xs-12 col-sm-6'>
+            		<input type='text' label='Name' class='form-control contact-input' name='last' placeholder='Last Name *'>
+          		</div>
+        		</div>
+        		<input type='text' class='form-control contact-input' name='subject' placeholder='Subject *'>
+        		<textarea class='form-control contact-input message' name='message' placeholder='Your Message *'></textarea>
+        		<input class='btn btn-default contact-submit' type='submit' value='Submit'>
+      		</form>
+		</div>
+	</section>
+</main>
+<footer>
+	Inspired by <a href='http://boilercamp.org/'>BoilerCamp 2015</a>.
+</footer>

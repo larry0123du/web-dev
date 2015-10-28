@@ -1,0 +1,31 @@
+{
+  "name": "web-dev",
+  "version": "1.0.0",
+  "description": "Personal Website",
+  "main": "server.js",
+  "scripts": {
+    "test": "hi",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/larry0123du/web-dev.git"
+  },
+  "keywords": [
+    "NodeJS",
+    "JavaScript",
+    "HTML",
+    "CSS"
+  ],
+  "author": "Ruihang Du",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/larry0123du/web-dev/issues"
+  },
+  "homepage": "https://github.com/larry0123du/web-dev#readme",
+  "dependencies": {
+    "ellipsize": "0.0.2",
+    "express": "^4.13.3",
+    "express-handlebars": "^2.0.1"
+  }
+}

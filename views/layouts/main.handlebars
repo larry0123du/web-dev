@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel='stylesheet' href='/bower_components/bootstrap/dist/css/bootstrap.min.css'>
+	<link rel='stylesheet' href='/bower_components/font-awesome/css/font-awesome.min.css'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
+	<link rel='stylesheet' href='/assets/css/style.css'>
+
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script type="text/javascript">
+
+		google.load("visualization", "1", {packages:["corechart"]});
+		google.setOnLoadCallback(drawStuff);
+
+		function drawStuff () {
+			// body...
+			var data = new google.visualization.arrayToDataTable([
+				["Skills", "Percentage", { role: 'style' } ],
+				["Java", 0.6, 'fill-color: gold'],
+				["JavaScript", 0.3, '#7FFF00'],
+				["Ruby", 0.4, 'red'],
+				["HTML", 0.3, 'purple'],
+				["Ruby on Rails", 0.2, 'pink']
+				]);
+			var options = {
+          		// title: 'Programming Languages',
+          		backgroundColor: 'transparent',
+          		height: 300,
+          		width:800,
+          		fontSize: 15,
+          		legend: { position: 'none' },
+          		// chart: { title: 'Programming Languages'},
+          		bars: 'horizontal', // Required for Material Bar Charts.
+          		axes: {
+            		x: {
+              		0: { side: 'top', label: 'Percentage'} // Top x-axis.
+            		}
+          		},
+          		bar: { groupWidth: "80%" },
+          		hAxis: {
+          			gridlines: {
+          				count: 5
+          			},
+          			format: 'percent',
+          			ticks: [0, 0.25, 0.50, 0.75, 1.00],
+          			textStyle: {
+          				color: 'purple',
+          				bold: true
+          			}
+          		},
+          		vAxis: {
+          			textStyle: {
+          				color: 'purple',
+          				bold: true
+          			}
+          		}
+        	};
+
+        	var chart = new google.visualization.BarChart(document.getElementById('skills'));
+        	chart.draw(data, options);
+		};
+	</script>
+	
+	<title>A Punk Programmer</title>
+</head>
+<body>
+	{{{ body }}}
+	<script src='/bower_components/jquery/dist/jquery.min.js'></script>
+	<script src='/bower_components/bootstrap/dist/js/bootstrap.min.js'></script>
+	<script src='/assets/js/main.js'></script>
+</body>
+</html>
+</html>
