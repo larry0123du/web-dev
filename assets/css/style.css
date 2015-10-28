@@ -1,6 +1,6 @@
 .main-header {
   height: 100vh;
-
+  min-width: 950px;
   background-image: url(https://scontent-ord1-1.xx.fbcdn.net/hphotos-xpl1/v/t1.0-9/11999062_1641757556102302_8252148374107087309_n.jpg?oh=971c2fc788c3e8e9d143de8f90ed6d43&oe=568D6F98);
   background-position: center center;
   background-size: cover;
@@ -10,6 +10,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
+  min-width: 950px;
 
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -35,10 +36,11 @@
 
 .social {
   position: relative;
-  align-items: center;
   top: 35%; 
   height: 80px;
   left: 43%;
+  width: 150px;
+  margin-right: 0;
 }
 
 .icon-container {
@@ -189,6 +191,7 @@ section {
 
 #experiences {
   min-height: 500px;
+  min-width: 950px;
   background-image: url(https://images.unsplash.com/photo-1429389500602-ee846f41eea7?q=80&fm=jpg&s=a4bb94171d7805618909e2b7a5951ce8);
   /*ls*/
 }
