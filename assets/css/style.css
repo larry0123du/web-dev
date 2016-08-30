@@ -211,6 +211,7 @@ section {
 }
 
 .sub-title {
+  color: 0xffffff;
   font-size: 35px;
   font-weight: 300;
 }
